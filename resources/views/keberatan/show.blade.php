@@ -93,12 +93,14 @@
 
                             <div class="row g-2">
                                 <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">Alasan yang dikuasakan</label>
-                                    <p class="bg-light p-3 rounded">
-                                        <embed type="application/pdf"
-                                            src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-                                            width="600" height="400"></embed>
-                                    </p>
+                                    <label for="nameWithTitle" class="form-label">Surat Kuasa</label>
+                                    <div class="bg-light p-3 rounded">
+                                        <object data="{{ $keberatan->surat_kuasa }}" type="application/pdf" width="100%"
+                                            height="600px">
+                                            <p>Alternative text - include a link <a href="{{ $keberatan->surat_kuasa }}">to
+                                                    the PDF!</a></p>
+                                        </object>
+                                    </div>
                                 </div>
                             </div>
 

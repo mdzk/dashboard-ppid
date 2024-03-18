@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-        Keberatan::factory()->count(100)->create();
-        Pengajuan::factory()->count(100)->create();
+        // Keberatan::factory()->count(100)->create();
+        // Pengajuan::factory()->count(100)->create();
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@mail.com',
-            'password' => Hash::make('admin'),
+            'password' => Hash::make('admin@123Tuba'),
         ]);
     }
 }

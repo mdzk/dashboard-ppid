@@ -25,4 +25,11 @@ class PengajuanController extends Controller
         $data['title'] = 'Admin OPD';
         return view('pengajuan.index');
     }
+
+    public function show($id)
+    {
+        $data['title'] = 'Detail Keberatan';
+        $data['pengajuan'] = $this->pengajuan->show($id);
+        return view('pengajuan.show', $data);
+    }
 }

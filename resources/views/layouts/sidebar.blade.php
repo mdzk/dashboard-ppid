@@ -63,13 +63,13 @@
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
-        <li class="menu-item {{ Request::is('keberatan') ? 'active' : '' }}">
+        <li class="menu-item {{ Request::is('keberatan/*') || Request::is('keberatan') ? 'active' : '' }}">
             <a href="/keberatan" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-spreadsheet"></i>
                 <div data-i18n="Boxicons">Keberatan</div>
             </a>
         </li>
-        <li class="menu-item {{ Request::is('pengajuan') ? 'active' : '' }}">
+        <li class="menu-item {{ Request::is('pengajuan/*') || Request::is('pengajuan') ? 'active' : '' }}">
             <a href="/pengajuan" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-spreadsheet"></i>
                 <div data-i18n="Boxicons">Pengajuan</div>
