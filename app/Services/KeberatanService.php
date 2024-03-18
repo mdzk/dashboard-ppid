@@ -16,4 +16,10 @@ class KeberatanService
     {
         return $this->keberatan->query();
     }
+
+    public function show($id)
+    {
+        $keberatan = $this->keberatan->find($id);
+        return $keberatan;
+    }
 }

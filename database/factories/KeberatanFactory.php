@@ -27,7 +27,7 @@ class KeberatanFactory extends Factory
             'no_tlp_yg_dikuasakan' => $this->faker->phoneNumber(),
             'pekerjaan_yg_dikuasakan' => $this->faker->jobTitle(),
             'alamat_yg_dikuasakan' => $this->faker->address(),
-            'surat_kuasa' => $this->faker->text(20),
+            'surat_kuasa' => 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
             'alasan' => $this->faker->text(30),
         ];
     }

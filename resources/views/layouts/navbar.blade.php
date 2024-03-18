@@ -12,7 +12,7 @@
             <div class="nav-item d-flex align-items-center w-100">
                 <i class="bx bx-search fs-4 lh-0"></i>
                 <input id="search" name="search" type="text" class="form-control border-0 shadow-none"
-                    placeholder="Cari Data" aria-label="Search..." />
+                    placeholder="Cari Data (Nama)" aria-label="Search..." />
             </div>
         </div>
         <!-- /Search -->
@@ -44,25 +44,6 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <div class="dropdown-divider"></div>
-                    </li>
-                    @if (auth()->user()->role == 'admin')
-                        <li>
-                            <a class="dropdown-item" href="/admin/profile">
-                                <i class="bx bx-user me-2"></i>
-                                <span class="align-middle">Profil</span>
-                            </a>
-                        </li>
-                    @else
-                        <li>
-                            <a class="dropdown-item" href="/oprator/profile">
-                                <i class="bx bx-user me-2"></i>
-                                <span class="align-middle">Profil</span>
-                            </a>
-                        </li>
-                    @endif
-
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>

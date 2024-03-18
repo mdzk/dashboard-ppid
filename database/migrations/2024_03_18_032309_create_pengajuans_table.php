@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nik');
             $table->text('alamat');
             $table->string('no_tlp');
+            $table->string('photo_ktp');
             $table->string('swa_photo_ktp');
             $table->string('pekerjaan');
             $table->string('informasi');

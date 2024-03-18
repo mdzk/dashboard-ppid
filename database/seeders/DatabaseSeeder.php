@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Keberatan;
+use App\Models\Pengajuan;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -17,6 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         Keberatan::factory()->count(100)->create();
+        Pengajuan::factory()->count(100)->create();
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@mail.com',

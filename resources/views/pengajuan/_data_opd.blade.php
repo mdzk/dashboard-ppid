@@ -2,16 +2,24 @@
     <thead>
         <tr>
             <th>#</th>
-            <th>Tujuan</th>
+            <th>Tanggal</th>
             <th>Nama</th>
+            <th>NIK</th>
+            <th>No Tlp</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
         @forelse ($table as $key => $tb)
             <tr>
                 <td>{{ $table->firstItem() + $key }}</td>
-                <td>{{ $tb->tujuan }}</td>
+                <td>{{ \Carbon\Carbon::parse($tb->created_at)->isoFormat('D MMMM Y') }}</td>
                 <td>{{ $tb->nama }}</td>
+                <td>{{ $tb->nik }}</td>
+                <td>{{ $tb->no_tlp }}</td>
+                <td>
+                    <a href="/pengajuan/show/{{ $tb->id }}" class="btn btn-primary btn-sm">Lihat</a>
+                </td>
             </tr>
         @empty
             <div class="col text-center">

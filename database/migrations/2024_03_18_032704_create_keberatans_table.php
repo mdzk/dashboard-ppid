@@ -18,12 +18,12 @@ return new class extends Migration
             $table->string('no_tlp');
             $table->string('pekerjaan');
             $table->string('alamat');
-            $table->string('nama_yg_dikuasakan');
-            $table->string('email_yg_dikuasakan');
-            $table->string('no_tlp_yg_dikuasakan');
-            $table->string('pekerjaan_yg_dikuasakan');
-            $table->string('alamat_yg_dikuasakan');
-            $table->string('surat_kuasa');
+            $table->string('nama_yg_dikuasakan')->nullable();
+            $table->string('email_yg_dikuasakan')->nullable();
+            $table->string('no_tlp_yg_dikuasakan')->nullable();
+            $table->string('pekerjaan_yg_dikuasakan')->nullable();
+            $table->string('alamat_yg_dikuasakan')->nullable();
+            $table->string('surat_kuasa')->nullable();
             $table->string('alasan');
             $table->timestamps();
         });

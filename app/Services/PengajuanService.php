@@ -16,4 +16,10 @@ class PengajuanService
     {
         return $this->pengajuan->query();
     }
+
+    public function show($id)
+    {
+        $pengajuan = $this->pengajuan->find($id);
+        return $pengajuan;
+    }
 }

@@ -19,10 +19,10 @@ class PengajuanController extends Controller
             if (\request()->search) {
                 $pengajuan->where('nama', 'like', '%' . \request()->search . '%');
             }
-            $data['table'] = $pengajuan->paginate();
-            return view('keberatan._data_opd', $data);
+            $data['table'] = $pengajuan->orderBy('created_at', 'DESC')->paginate();
+            return view('pengajuan._data_opd', $data);
         }
         $data['title'] = 'Admin OPD';
-        return view('keberatan.index');
+        return view('pengajuan.index');
     }
 }
